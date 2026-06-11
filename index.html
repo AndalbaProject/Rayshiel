@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Rayshiel</title>
+  <meta name="description" content="A little website made with love for your birthday." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Courier+Prime:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ COVER / OPEN ME ============ -->
+  <section class="cover" id="cover">
+    <div class="cover-glow"></div>
+    <div class="cover-inner">
+      <p class="cover-tag">a little something for you</p>
+      <h1 class="cover-title">Happy<br/>Birthday<br/><em>Rayshiel</h1>
+
+      <div class="cover-photo">
+        <div class="hat">🎉</div>
+        <div class="face"></div>
+      </div>
+
+      <button class="open-btn" id="openBtn">
+        <span>open me</span>
+      </button>
+    </div>
+    <p class="cover-hint">tap to open ✦</p>
+  </section>
+
+  <!-- ============ MAIN ============ -->
+  <main class="story" id="story">
+
+    <!-- floating music control -->
+    <button class="music-toggle" id="musicToggle" aria-label="Putar / hentikan musik">
+      <span class="note">♪</span>
+      <span class="bars"><i></i><i></i><i></i></span>
+    </button>
+
+    <!-- progress dots -->
+    <nav class="dots" aria-label="Navigasi">
+      <a href="#scene-collage" class="dot active"></a>
+      <a href="#scene-traits" class="dot"></a>
+      <a href="#scene-letter" class="dot"></a>
+    </nav>
+
+    <!-- ---------- SCENE 1 : COLLAGE + LYRIC ---------- -->
+    <section class="scene collage" id="scene-collage">
+      <div class="lyric" aria-hidden="true">
+        <p>when I love someone</p>
+        <p>the whole world feels softer,</p>
+        <p>every little moment</p>
+        <p>turns into something I want</p>
+        <p>to keep forever.</p>
+      </div>
+
+      <div class="polaroids">
+        <figure class="pola p1"><span class="pic"></span></figure>
+        <figure class="pola p2"><span class="pic"></span></figure>
+        <figure class="pola p3"><span class="pic"></span></figure>
+        <figure class="pola p4"><span class="pic"></span></figure>
+        <figure class="pola p5"><span class="pic"></span></figure>
+        <figure class="pola p6"><span class="pic"></span></figure>
+      </div>
+
+      <p class="scene-caption">when you love someone ✦</p>
+    </section>
+
+    <!-- ---------- SCENE 2 : PERSONALITY TRAITS ---------- -->
+    <section class="scene traits" id="scene-traits">
+      <h2 class="scene-title">everything you are</h2>
+
+      <div class="trait-stage">
+        <div class="portrait">
+          <div class="portrait-img"></div>
+        </div>
+
+        <span class="trait t1">thoughtful</span>
+        <span class="trait t2">loyal</span>
+        <span class="trait t3">warmhearted</span>
+        <span class="trait t4">calm</span>
+        <span class="trait t5">funny</span>
+        <span class="trait t6">caring</span>
+        <span class="trait t7">supportive</span>
+        <span class="trait t8">genuine</span>
+        <span class="trait t9">charming</span>
+        <span class="trait t10">unforgettable</span>
+
+        <span class="spark s1">✦</span>
+        <span class="spark s2">✧</span>
+        <span class="spark s3">★</span>
+        <span class="spark s4">✦</span>
+        <span class="spark s5">✧</span>
+      </div>
+    </section>
+
+    <!-- ---------- SCENE 3 : LETTER ---------- -->
+    <section class="scene letter" id="scene-letter">
+      <article class="letter-card">
+        <h3 class="letter-title">Happy Birthday, <span id="nameTarget">Keonho</span>.</h3>
+        <p>
+         Hi rayshieel, happy b’day iaa, wish u all the best, semoga di usia yang baru ini hal hal baik datang menghampiri kamu. thank u for being such an amazing person. thank u for every laugh, every story, every random conversation and every memory we’ve sharef together
+        </p>
+        <p>
+         semoga kesehatan selalu menyertai kamu, semoga langkah kamu selalu dipermudah. And most importantly i hope u stay happy, i hope u find reasons to smile even when life gets overwhelming. Thank u for being yourself and thank u for spreading kindness without even realizing it. please always be by my side. Once again, Happy birthday and enjoy ur special day 💕
+
+        </p>
+        <p class="letter-sign">Love,<br/><span id="nameFrom">Lily</span>.</p>
+      </article>
+
+      <div class="film-strip">
+        <span class="film f1"></span>
+        <span class="film f2"></span>
+        <span class="film f3"></span>
+        <span class="film f4"></span>
+        <span class="film f5"></span>
+      </div>
+
+      <p class="the-end">the end — but not really ♡</p>
+    </section>
+
+  </main>
+
+  <!-- background music: letakkan file song.mp3 di folder yang sama -->
+  <audio id="bgm" loop preload="auto">
+    <source src="song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
