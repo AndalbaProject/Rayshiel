@@ -187,8 +187,7 @@ em { font-style: italic; }
   border-radius: 3px;
   box-shadow: 0 18px 40px -14px rgba(0,0,0,0.75);
   opacity: 0;
-  transform: scale(0.6) rotate(0deg);
-  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2,0.9,0.3,1.2);
+  transition: opacity 0.55s ease, transform 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .pola .pic {
   display: block;
@@ -198,20 +197,31 @@ em { font-style: italic; }
   background-size: cover;
   background-position: center;
 }
-.collage.in .pola { opacity: 1; }
-.p1 { top: 4%;  left: 6%;  transform-origin: center; }
+
+/* posisi akhir tiap polaroid di papan collage */
+.p1 { top: 4%;  left: 6%; }
 .p2 { top: 0%;  left: 36%; }
 .p3 { top: 8%;  left: 64%; }
 .p4 { top: 42%; left: 18%; }
 .p5 { top: 40%; left: 50%; }
 .p6 { top: 30%; left: 72%; }
 
-.collage.in .p1 { transform: scale(1) rotate(-9deg); transition-delay: 0.05s; }
-.collage.in .p2 { transform: scale(1) rotate(5deg);  transition-delay: 0.15s; }
-.collage.in .p3 { transform: scale(1) rotate(-6deg); transition-delay: 0.25s; }
-.collage.in .p4 { transform: scale(1) rotate(8deg);  transition-delay: 0.35s; }
-.collage.in .p5 { transform: scale(1) rotate(-4deg); transition-delay: 0.45s; }
-.collage.in .p6 { transform: scale(1) rotate(10deg); transition-delay: 0.55s; }
+/* keadaan awal: melayang jauh dari berbagai arah (di luar layar) */
+.p1 { transform: translate(-260%, -120%) rotate(-45deg) scale(0.4); }
+.p2 { transform: translate(0%,   -320%)  rotate(30deg)  scale(0.4); }
+.p3 { transform: translate(260%, -120%)  rotate(45deg)  scale(0.4); }
+.p4 { transform: translate(-280%, 170%)  rotate(-30deg) scale(0.4); }
+.p5 { transform: translate(0%,    330%)  rotate(20deg)  scale(0.4); }
+.p6 { transform: translate(290%,  150%)  rotate(40deg)  scale(0.4); }
+
+/* satu per satu terbang masuk lalu berkumpul jadi satu collage */
+.collage.in .pola { opacity: 1; }
+.collage.in .p1 { transform: rotate(-9deg) scale(1); transition-delay: 0.15s; }
+.collage.in .p2 { transform: rotate(5deg)  scale(1); transition-delay: 0.60s; }
+.collage.in .p3 { transform: rotate(-6deg) scale(1); transition-delay: 1.05s; }
+.collage.in .p4 { transform: rotate(8deg)  scale(1); transition-delay: 1.50s; }
+.collage.in .p5 { transform: rotate(-4deg) scale(1); transition-delay: 1.95s; }
+.collage.in .p6 { transform: rotate(10deg) scale(1); transition-delay: 2.40s; }
 
 .p1 .pic { background-image: url("foto1.jpeg"); }
 .p2 .pic { background-image: url("foto2.jpeg"); }
